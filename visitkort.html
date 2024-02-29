@@ -3,84 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Business Card</title>
+    <title>Edvin Bengtsson</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: rgb(3, 24, 41);
         }
 
         header {
-            background-color: #333333;
-            color: white;
+            background-color: rgb(3, 24, 41);
+            color: LemonChiffon;
             text-align: center;
-            padding: 1em;
-        }
-
-        section {
             padding: 2em;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            background-color: rgb(3, 24, 41);
+            color: LemonChiffon;
             text-align: center;
             padding: 1em;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        .column {
+            float: left;
+            width: 33%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        a {
+            color: rgb(189, 221, 247);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        section {
+            padding: 2em;
+            background-color: rgb(3, 24, 41);
+            color: burlywood;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Edvin Bengtsson</h1>
-        <p>Job Title</p>
+        <h1 style="font-size: 50px;">Edvin Bengtsson</h1>
+        <p>Civilingenjör inom datateknik</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="workExperience.html">Work Experience</a></li>
-            <li><a href="educationPage.html">Education</a></li>
-            <li><a href="https://github.com/Amfibie">Github</a></li>
-        </ul>
-    </nav>
-
+<!--
     <section>
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself and your professional background.</p>
+        <h2>Om mig</h2>
+        <p><i>Write a brief introduction about yourself and your professional background.</i></p>
     </section>
-
-    <section>
+-->
+    <section style="text-align: center;">
         <h2>Kontaktuppgifter</h2>
         <p>Email: edvin.bengt@gmail.com</p>
-        <p>Phone: +46-729647125</p>
-        <p>Address: 123 Main Street, City, Country</p>
+        <p>Telefonnummer: +46-729647125</p>
+        <p>Address: Gibraltargatan 80, 412 79, Göteborg, Sverige</p>
     </section>
+
 
     <footer>
         &copy; 2024 Edvin Bengtsson
+        <br><br>
+        <div class="row">
+            <div class="column" style="text-align: center;">
+                <nav><a href="workExperience.html">Arbetslifserfarenheter</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="educationPage.html">Utbildning</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="https://github.com/Amfibie">Github</a></nav>
+            </div>
+        </div>
     </footer>
 
-    
-    <!-- Handles 404 error-->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Check if the requested page exists, otherwise redirect to 404.html
-        var validPages = ['visitkort', 'workExperience', 'educationPage'];  // Add valid page names
-        var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
-
-        if (!validPages.includes(currentPage)) {
-            window.location.href = '404.html';
-        }
-    });
-</script>
 
 </body>
+    <!-- Handles 404 error-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check if the requested page exists, otherwise redirect to 404.html
+            var validPages = ['visitkort', 'workExperience', 'educationPage'];  // Add valid page names
+            var currentPage = window.location.pathname.split('/').pop().replace('.html', '');
+    
+            if (!validPages.includes(currentPage)) {
+                window.location.href = '404.html';
+            }
+        });
+    </script>
 </html>
 
 

@@ -9,29 +9,58 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: rgb(3, 24, 41);
+            
+            background-image: url('chalmers_logo_white.jpg'); 
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 25%;
         }
 
         header {
-            background-color: #333;
-            color: white;
+            color: LemonChiffon;
             text-align: center;
-            padding: 1em;
-        }
-
-        section {
-            padding: 2em;
+            padding: 0em;
+            padding-bottom: 5em;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            color: LemonChiffon;
             text-align: center;
             padding: 1em;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        .column {
+            float: left;
+            width: 33%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        a {
+            color: rgb(189, 221, 247);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        section {
+            padding: 2em;
+            color: burlywood;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
     </style>
+   
 </head>
 <body>
 
@@ -40,26 +69,31 @@
         <p>Utbildning</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="visitkort.html">Home</a></li>
-        </ul>
-    </nav>
-
     <section>
+        <!--
         <h2>Civilingenjör inom datateknik</h2>
-        <p>Examensår: 2027</p>
+        <p><b>Skola:</b> Chalmers tekniska högskola</p>
+        <p><b>Examensår:</b> 2025</p>
         <p>Min civilingenjörs utbildning består av</p><br>
+        -->
+            <div class="row">
+                <div class="column" style="width: 50%">
+                    <h2>Kandidat i datateknik</h2>
+                    <p><b>Skola:</b> Chalmers</p>
+                    <p><b>Examensår:</b> 2025</p>
+                    <p><b>Beskrivning:</b> <i>Brief description of your degree and major.</i></p><br>
+                </div>
 
-            <h3>Kandidat i datateknik</h3>
-            <p><b>Skola:</b> Chalmers</p>
-            <p><b>Examensår:</b> 2025</p>
-            <p><b>Beskrivning:</b> <i>Brief description of your degree and major.</i></p><br>
-            
-            <h2>Master of computersystems and AI</h2>
-            <p><b>Skola:</b> Chalmers</p>
-            <p><b>Examensår:</b> 2027</p>
-            <p><b>Beskrivning:</b> <i>Brief description of your degree and major.</i></p><br>
+                <!--<img src="chalmers_logo_white.jpg" style="width:500px; height:500px; align-items;">-->
+
+                <div class="column" style="width: 50%; text-indent: 15%;">
+                    <h2>Magister inom datasystem och AI</h2>
+                    <p><b>Skola:</b> Chalmers</p>
+                    <p><b>Examensår:</b> 2027</p>
+                    <p><b>Beskrivning:</b> <i>Brief description of your degree and major.</i></p><br>
+                </div>
+            </div>
+          
     </section>
 
 
@@ -67,7 +101,20 @@
 
     <footer>
         &copy; 2024 Edvin Bengtsson
+        <br><br>
+        <div class="row">
+            <div class="column" style="text-align: center;">
+                <nav><a href="workExperience.html">Arbetslifserfarenheter</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="visitkort.html">Förstasida</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="https://github.com/Amfibie">Github</a></nav>
+            </div>
+        </div>
     </footer>
+
 
 </body>
 </html>
