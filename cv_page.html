@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edvin Bengtsson</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(3, 24, 41);
+        }
+        header {
+            color: LemonChiffon;
+            text-align: center;
+            padding: 2em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        footer {
+            color: LemonChiffon;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .column {
+            float: left;
+            width: 20%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        section {
+            padding: 2em;
+            color: burlywood;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .cv-container {
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            height: 50vh;
+        }
+        
+        .cv-container img {
+            position: absolute;
+            left: 7%;
+            top: 70%; /* Center vertically (optional, for demonstration) */
+            transform: translateY(-70%); /* Adjust for the height of the image for perfect vertical centering */
+            width: 22%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 50px;">Edvin Bengtsson</h1>
+    </header>
+
+    <div style="padding-left: 40%; color: whitesmoke;">
+        <h2 style="margin-left: 30%;">Om mig</h2>
+        <p  style="white-space: pre-wrap; font-size: 18px;">
+            På fritiden ägnar jag mig gärna åt matlagning och fiske, 
+            aktiviteter som kräver både kreativitet och tålamod. Under 
+            vinterhalvåret gillar jag även att åkasnowboard.
+        </p>
+    </div>
+    <div class="cv-container">
+        <a href="CV_contact_linkedIn.pdf" target="_blank">
+            <img src="CV_contact_linkedIn_page-0001.jpg" alt="Bild av CV:t" title="Klicka för att se CV:t">
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2024 Edvin Bengtsson
+        <br><br>
+        <div class="row">
+            <div class="column" style="text-align: center;">
+                <nav><a href="workExperience.html">Arbetslifserfarenheter</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="educationPage.html">Utbildning</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="visitkort.html">Förstasida</a></nav>
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="cv_page.html">CV-page</a></nav>
+                <!-- <nav><a href="CV_contact_linkedIn.pdf">CV</a></nav>-->
+            </div>
+            <div class="column" style="text-align: center;">
+                <nav><a href="https://github.com/Amfibie">Github</a></nav>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
