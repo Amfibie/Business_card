@@ -49,37 +49,36 @@
             color: burlywood;
             font-size: 15px;
         }
+
+        .hover-link {
+            text-decoration: underline;
+            color: inherit; /* Keeps the original text color */
+            transition: color 0.3s ease; /* Smooth color transition */
+            font-size: 100%;
+        }
+
+        .hover-link:hover {
+                /* Use a CSS variable for the hover color.
+       If the variable is not set, default to lightblue */
+            color: var(--hover-color, lightblue);
+        }
+
+        .text-bg {
+            background-image: url('hono_fisk_logo.png');
+            background-repeat: no-repeat;
+            background-size: cover;  /* or use 'contain', depending on your needs */
+            padding: 0.2em;          /* Optional: add some padding so the background isn't flush against the text */
+            border-radius: 4px;      /* Optional: for rounded corners */
+        }
+
+        .background-section {
+            background-image: url('hono_fisk_logo.png'); /* Ange rätt bildsökväg */
+            background-size: 20%; /* Gör så att bilden täcker hela ytan */
+            background-repeat: no-repeat; /* Förhindrar upprepning av bilden */
+            background-position: 5%; /* Centrerar bilden */
+        }
+
     </style>
-    <!--
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
--->
 </head>
 <body>
 
@@ -89,15 +88,39 @@
     </header>
 
 
-    <section style="text-align: center; margin-top: -6%;">
-        <h2>Hönö Fisk AB</h2>
-        <p>Arbetslagsledare</p>
-        <p>Augusti 2018 - Pågående</p>
+    <section class="background-section" style="text-align: center; margin-top: -6%;">
+        <h2>
+            <a href="https://honofisk.se" class="hover-link" target="_blank">
+                Hönö Fisk AB
+            </a>
+        </h2>
+        <h3>Butiksbiträde</h3>
+        <p>Augusti 2018 - Maj 2020</p>
         <p style="margin-left:30%; margin-right: 30%; white-space: pre-wrap; font-size: 18px;">
-            2018 började jag som butiksbiträde och har sedan 2020 haft rollen som arbetslagsledare. Min tjänst är flexibel då jag arbetar heltid under sommaren och deltidsarbete resten av året. Arbetsuppgifterna är breda och kräver stort ansvar, där jag dagligen hanterar produktion av varor, försäljning, städning, samt inköp. Jag delar även ansvaret för upplärningen av nyanställda och har sedan 2020 tagit fullt ansvar för butikens drift och inköp under butikschefens sommarsemester.</p>
+            2018 började jag som butiksbiträde på Hönö Fisks fiskbil i Onsala. Min roll omfattade försäljning, produktion av varor och städning. Under dem första åren fick jag en omfattande erfarenheter av kundbemötande och service samt hur man skapar och bibehåller starka kundrelationer. Arbetstiderna varierade då jag arbetade deltid på helger och lov parallelt med studierna samt heltid under sommaren.
+        </p>
     </section>
+    <section class="background-section" style="text-align: center; margin-top: -6%; padding-top: 5%;">
+        <h3>Arbetslagsledare</h3>
+        <p>Maj 2020 - Pågående</p>
+        <p style="margin-left:30%; margin-right: 30%; white-space: pre-wrap; font-size: 18px;">
+            Sedan 2020 har jag varit arbetslagsledare på Hönö Fisk, för butiken i Onsala, Munkebäck och Mölndal. Arbetsuppgifterna är breda och kräver stort ansvar, där jag dagligen hanterar produktion av varor, försäljning, städning, samt inköp av varor. Jag delar även ansvaret för upplärningen av nyanställda och har tagit fullt ansvar för butikens drift och inköp under butikschefens sommarsemester.
 
-    <!-- Add more sections for additional work experiences -->
+            Som arbetslagsledare har jag utvecklat ytterligare värdefulla egenskaper, såsom hur ett välfungerande team arbetar, en ännu mer ökad initiativ förmåga samt hur man förhåller sig professionell i även pressade situationer.
+        </p>
+    </section>
+    <section  style="text-align: center; margin-top: -6%;">
+        <h2>
+            Clean Case UF
+        </h2>
+        <h3>VD</h3>
+        <p>Augusti 2020 - Juni 2021</p>
+        <p style="margin-left:30%; margin-right: 30%; white-space: pre-wrap; font-size: 18px;">
+            Som en del av kursen Entreprenörskap startade och drev jag tillsammans med en studiekamrat UF-företaget Clean Case UF. Vår affärsidé var att sälja miljövänliga vattenflaskor tillverkade av förnybara råvaror. Vi marknadsförde och sålde flaskorna genom dörrknackning samt via en monter i Hönö Fisk AB:s butik i Onsala. Försäljningen var framgångsrik och företaget gick med vinst. 
+            
+            Förutom försäljning ansvarade vi för att designa en hemsida och skapa en närvaro på sociala medier genom företagskonton på Facebook och Instagram, vilket bidrog till att nå ut till fler kunder och bygga varumärkeskännedom.
+        </p>
+    </section>
 
     <footer>
         &copy; 2025 Edvin Bengtsson
