@@ -56,6 +56,42 @@
         .google-maps-link:hover {
            color: lightblue; /* Ändra färg vid hover för just denna länk */
         }
+
+        /* Menyknapp */
+        .menu-button {
+            position: absolute;
+            top: 3%;
+            right: 2%;
+            background-color: burlywood;
+            color: rgb(3, 24, 41);
+            border: none;
+            padding: 0.75% 1.5%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5%;
+        }
+
+        /* Menyn (gömd som standard) */
+        .menu {
+            display: none;
+            position: absolute;
+            right: 1%;
+            top: 11%;
+            background-color: rgb(3, 24, 41);
+            text-align: left;
+        }
+
+        .menu a {
+            display: block;
+            padding: 5%;
+            text-decoration: none;
+            color: burlywood;
+        }
+
+        .menu a:hover {
+            background-color: rgb(189, 221, 247);
+            color: rgb(3, 24, 41);
+        }        
     </style>
 </head>
 <body>
@@ -63,8 +99,39 @@
     <header>
         <h1 style="font-size: 50px;">Edvin Bengtsson</h1>
         <p>Civilingenjör inom datateknik</p>
+        <button class="menu-button" onclick="toggleMenu()">☰ Meny</button>
+        <div class="menu" id="menu">
+            <a href="visitkort.html">Förstasida</a>
+            <a href="workExperience.html">Arbetslivserfarenheter</a>
+            <a href="educationPage.html">Utbildning</a>
+            <a href="personalInfo.html">Mer om mig</a>
+            <a href="Edvin_Bengtsson_CV.pdf" target="_blank">CV - Svenska</a>
+            <a href="Edvin_Bengtsson_Resume.pdf" target="_blank">CV - English</a>
+            <a href="https://github.com/Amfibie" target="_blank">Github</a>
+        </div>
     </header>
 
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        // Stäng menyn om man klickar utanför
+        document.addEventListener("click", function(event) {
+            var menu = document.getElementById("menu");
+            var button = document.querySelector(".menu-button");
+
+            if (!menu.contains(event.target) && !button.contains(event.target)) {
+                menu.style.display = "none";
+            }
+        });
+    </script>
     
     <section style="text-align: center;">
         <h2>Kontaktuppgifter</h2>
@@ -83,33 +150,6 @@
             LinkedIn
           </a>
     </section>
-
-
-    <footer>
-        &copy; 2025 Edvin Bengtsson
-        <br><br>
-        <div class="row">
-            <div class="column" style="text-align: center;">
-                <nav><a href="workExperience.html">Arbetslivserfarenheter</a></nav>
-            </div>
-            <div class="column" style="text-align: center;">
-                <nav><a href="educationPage.html">Utbildning</a></nav>
-            </div>
-            <div class="column" style="text-align: center;">
-                <nav><a href="personalInfo.html">Mer om mig</a></nav>
-            </div>
-            <div class="column" style="text-align: center;">
-                <a href="Edvin_Bengtsson_CV.pdf" target="_blank">CV - Svenska</a>
-            </div>
-            <div class="column" style="text-align: center;">
-                <a href="Edvin_Bengtsson_Resume.pdf" target="_blank">CV - English</a>
-            </div>
-            <div class="column" style="text-align: center;">
-                <nav><a href="https://github.com/Amfibie">Github</a></nav>
-            </div>
-        </div>
-    </footer>
-
 
 </body>
     <!-- Handles 404 error-->
