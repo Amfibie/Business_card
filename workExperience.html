@@ -27,16 +27,16 @@
             width: 100%;
         }
 
-        /* Menyknapp */
-        .menu-button {
-            position: absolute;
+       /* Menyknapp */
+       .menu-button {
+            position: fixed;
             top: 3%;
             right: 2%;
             background-color: burlywood;
             color: rgb(3, 24, 41);
             border: none;
             padding: 0.75% 1.5%;
-            font-size: 16px;
+            font-size: 100%;
             cursor: pointer;
             border-radius: 5%;
         }
@@ -61,17 +61,12 @@
         .menu a:hover {
             background-color: rgb(189, 221, 247);
             color: rgb(3, 24, 41);
-        }
-
-        a {
-            color: rgb(189, 221, 247);
-            font-size: 15px;
-        }
+        }  
 
         section {
             padding: 2em;
             color: burlywood;
-            font-size: 15px;
+            font-size: 100%;
         }
 
         .hover-link {
@@ -91,8 +86,6 @@
             background-image: url('images/hono_fisk_logo.png');
             background-repeat: no-repeat;
             background-size: cover;  /* or use 'contain', depending on your needs */
-            padding: 0.2em;          /* Optional: add some padding so the background isn't flush against the text */
-            border-radius: 4px;      /* Optional: for rounded corners */
         }
 
         .background-section {
@@ -100,13 +93,21 @@
             background-size: 20%; /* Gör så att bilden täcker hela ytan */
             background-repeat: no-repeat; /* Förhindrar upprepning av bilden */
             background-position: 5%; /* Centrerar bilden */
+            text-align: center; 
+            margin-top: -6%;
+        }
+
+        .text {
+            margin-left:30%; 
+            margin-right: 30%; 
+            white-space: pre-wrap; font-size: 115%;
         }
 
     </style>
 </head>
 <body>
     <header>
-        <h1 style="font-size: 50px;">Edvin Bengtsson</h1>
+        <h1 style="font-size: 340%;">Edvin Bengtsson</h1>
         <p>Arbetslivserfarenheter</p>
         <button class="menu-button" onclick="toggleMenu()">☰ Meny</button>
         <div class="menu" id="menu">
@@ -143,7 +144,7 @@
     </script>
 
 
-    <section class="background-section" style="text-align: center; margin-top: -6%;">
+    <section class="background-section">
         <h2>
             <a href="https://honofisk.se" class="hover-link" target="_blank">
                 Hönö Fisk AB
@@ -151,26 +152,26 @@
         </h2>
         <h3>Butiksbiträde</h3>
         <p>Augusti 2018 - Maj 2020</p>
-        <p style="margin-left:30%; margin-right: 30%; white-space: pre-wrap; font-size: 18px;">
+        <p class="text">
             2018 började jag som butiksbiträde på Hönö Fisks fiskbil i Onsala. Min roll omfattade försäljning, produktion av varor och städning. Under dem första åren fick jag en omfattande erfarenheter av kundbemötande och service samt hur man skapar och bibehåller starka kundrelationer. Arbetstiderna varierade då jag arbetade deltid på helger och lov parallelt med studierna samt heltid under sommaren.
         </p>
     </section>
-    <section class="background-section" style="text-align: center; margin-top: -6%; padding-top: 5%;">
+    <section class="background-section">
         <h3>Arbetslagsledare</h3>
         <p>Maj 2020 - Pågående</p>
-        <p style="margin-left:30%; margin-right: 30%; white-space: pre-wrap; font-size: 18px;">
+        <p class="text">
             Sedan 2020 har jag varit arbetslagsledare på Hönö Fisk, för butiken i Onsala, Munkebäck och Mölndal. Arbetsuppgifterna är breda och kräver stort ansvar, där jag dagligen hanterar produktion av varor, försäljning, städning, samt inköp av varor. Jag delar även ansvaret för upplärningen av nyanställda och har tagit fullt ansvar för butikens drift och inköp under butikschefens sommarsemester.
 
             Som arbetslagsledare har jag utvecklat ytterligare värdefulla egenskaper, såsom hur ett välfungerande team arbetar, en ännu mer ökad initiativ förmåga samt hur man förhåller sig professionell i även pressade situationer.
         </p>
     </section>
-    <section  style="text-align: center; margin-top: -6%;">
+    <section style="text-align: center; margin-top: -3%;">
         <h2>
             Clean Case UF
         </h2>
         <h3>VD</h3>
         <p>Augusti 2020 - Juni 2021</p>
-        <p style="margin-left:30%; margin-right: 30%; white-space: pre-wrap; font-size: 18px;">
+        <p class="text">
             Som en del av kursen Entreprenörskap startade och drev jag tillsammans med en studiekamrat UF-företaget Clean Case UF. Vår affärsidé var att sälja miljövänliga vattenflaskor tillverkade av förnybara råvaror. Vi marknadsförde och sålde flaskorna genom dörrknackning samt via en monter i Hönö Fisk AB:s butik i Onsala. Försäljningen var framgångsrik och företaget gick med vinst. 
             
             Förutom försäljning ansvarade vi för att designa en hemsida och skapa en närvaro på sociala medier genom företagskonton på Facebook och Instagram, vilket bidrog till att nå ut till fler kunder och bygga varumärkeskännedom.
