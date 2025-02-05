@@ -10,12 +10,6 @@
             margin: 0;
             padding: 0;
             background-color: rgb(3, 24, 41);
-
-            background-image:url('Potratt.png');
-            background-repeat: no-repeat; 
-            background-attachment: fixed;
-            background-position:80%;
-            background-size: 16%;
         }
 
         header {
@@ -23,17 +17,6 @@
             text-align: center;
             padding: 2em;
             font-family: 'Times New Roman', Times, serif;
-        }
-
-        .column {
-            float: left;
-            width: 15%;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
         }
 
         a {
@@ -82,7 +65,21 @@
         .menu a:hover {
             background-color: rgb(189, 221, 247);
             color: rgb(3, 24, 41);
-        }        
+        }   
+        
+        .container {
+            display: grid;
+            align-items: normal;
+            grid-template-columns: 70% auto;
+            column-gap: 1%;
+        }
+        
+        img {
+            width: 50%;
+            max-height:100%;
+        }
+
+
     </style>
 </head>
 <body>
@@ -91,7 +88,7 @@
         <h1 style="font-size: 50px;">Edvin Bengtsson</h1>
         <button class="menu-button" onclick="toggleMenu()">☰ Meny</button>
         <div class="menu" id="menu">
-            <a href="index.html">Förstasida</a>
+            <a href="index.html">Hem</a>
             <a href="workExperience.html">Arbetslivserfarenheter</a>
             <a href="educationPage.html">Utbildning</a>
             <a href="personalInfo.html">Mer om mig</a>
@@ -124,20 +121,27 @@
     </script>
 
     <section>
-        <h2 style="text-indent: 5%; margin-top: -5%;">Om mig</h2>
-        <p  style="white-space: pre-wrap; font-size: 18px;">
-            Tekniskt intresserad, driven och lösningsorienterad med erfarenhet av
-            ledarskap. Jag intresseras av tekniska utmaningar och har alltid försökt finna nya
-            sätt att tackla problem på. Logiskt utmanande uppgifter har alltid varit intressanta
-            och engagerande att ta sig an. Programmering kombinerar mitt intresse för logiska
-            utmaningar med möjligheten att skapa konkreta lösningar. Genom mitt UF-företag
-            har jag även fått värdefull erfarenhet av affärsutveckling och marknadsföring. Jag
-            söker nu möjligheter att använda mina tekniska färdigheter och mitt driv inom
-            programmering för att bidra till en innovativ och framgångsrik verksamhet.
-            
-            På fritiden ägnar jag mig gärna åt matlagning och fiske, aktiviteter som kräver både
-            kreativitet och tålamod. Under vinterhalvåret gillar jag även att åka snowboard.
-        </p>
+        <div class="container">
+            <div>
+                <h2 style="text-indent: 5%; margin-top: -5%; padding-left:35%;">Om mig</h2>
+                <p  style="white-space: pre-wrap; font-size: 120%;">
+                    Tekniskt intresserad, driven och lösningsorienterad med erfarenhet av
+                    ledarskap. Jag intresseras av tekniska utmaningar och har alltid försökt finna nya
+                    sätt att tackla problem på. Logiskt utmanande uppgifter har alltid varit intressanta
+                    och engagerande att ta sig an. Programmering kombinerar mitt intresse för logiska
+                    utmaningar med möjligheten att skapa konkreta lösningar. Genom mitt UF-företag
+                    har jag även fått värdefull erfarenhet av affärsutveckling och marknadsföring. Jag
+                    söker nu möjligheter att använda mina tekniska färdigheter och mitt driv inom
+                    programmering för att bidra till en innovativ och framgångsrik verksamhet.
+                    
+                    På fritiden ägnar jag mig gärna åt matlagning och fiske, aktiviteter som kräver både
+                    kreativitet och tålamod. Under vinterhalvåret gillar jag även att åka snowboard.
+                </p>
+            </div>
+            <div class="image">
+                <img src="images/Potratt.png">
+            </div>
+        </div>
     </section>
 
     <footer>
